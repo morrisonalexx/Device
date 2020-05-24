@@ -6,25 +6,31 @@
   </head>
   <body>
     <header class="page-header">
+
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x100" alt="логотип магазина Девайс" aria-label="дейвайс">
+        <img src="https://via.placeholder.com/150x100" width="150px" height="100" alt="логотип магазина Девайс" aria-label="дейвайс">
       </a>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
+
+      <form action="#" method="POST">
+        <input type="search" placeholder="Поиск по сайту">
+      </form>
+
+      <section class="user-nav">
+        <ul class="user-nav__list">
+          <li class="user-nav__item">
             <a href="">Поиск по сайту</a>
           </li>
-          <li class="header-nav__item">
+          <li class="user-nav__item">
             <a href="">Войти</a>
           </li>
-          <li class="header-nav__item">
+          <li class="user-nav__item">
             <a href="">Сравнить</a>
           </li>
-          <li class="header-nav__item">
+          <li class="user-nav__item">
             <a href="">Корзина</a>
           </li>
         </ul>
-      </nav>
+      </section>
 
       <nav class="header-menu">
         <ul class="header-menu__list">
@@ -65,10 +71,10 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Каталог товаров</h1>
+      <h1 class="visually-hidden">Магазин DEVICE</h1>
 
-      <div class="info-wrapper">
-        <section class="about">
+      <section class="info-wrapper">
+        <div class="about">
           <h2 class="about__title">О нас</h2>
           <p class="about__us">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -83,9 +89,9 @@
             <li class="devivery_comp">ЖелДорЭкспедиция</li>
           </ul>
           <a href="" class="info-link btn">подробнее о нас</a>
-        </section>
+        </div>
 
-        <section class="contacts">
+        <div class="contacts">
           <h2 class="contacts__title">Контакты</h2>
 
           <div class="address">
@@ -94,53 +100,67 @@
               Всякое
               бывает.
             </p>
-            <iframe class="address__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488834914!2d37.52742395175689!3d55.68703098044029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1590150275537!5m2!1sen!2sru"
-              width="600" height="450"></iframe>
+
+          <div class="address__map">
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488834914!2d37.52742395175689!3d55.68703098044029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1590150275537!5m2!1sen!2sru">
+              <img src="" width="560" height="222">
+            </a>
+          </div>
             <a href="" class="contacts__link btn">напишите нам</a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
 
 
     <footer class="page-footer">
+      <a href="index.html" class="page-footer__logo" aria-label="дейвайс"></a>
+      <span class="page-footer__address">г. Москва, ул. Строителей, 15</span>
+      <div class="page-footer__yellowblock"></div>
 
-      <div class="info__wrap">
-        <a href="index.html" class="page-footer__logo" aria-label="дейвайс"></a>
-        <span class="page-footer__address">г. Москва, ул. Строителей, 15</span>
-        <div class="page-footer__yellowblock"></div>
-      </div>
+      <ul class="footer-menu__list">
+        <li class="footer-menu__item"><a href="">Доставка</a></li>
+        <li class="footer-menu__item"><a href="">Гарантия</a></li>
+        <li class="footer-menu__item"><a href="">Контакты</a></li>
+      </ul>
 
-
-      <nav class="footer-menu">
-        <ul class="footer-menu__list">
-          <li class="footer-menu__item"><a href="">Доставка</a></li>
-          <li class="footer-menu__item"><a href="">Гарантия</a></li>
-          <li class="footer-menu__item"><a href="">Контакты</a></li>
+      <section class="social">
+        <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item fb">
+            <a href="https://www.facebook.com/htmlacademy" class="social__item fb"></a>
+          </li>
+          <li class="social__item insta">
+            <a href="https://www.instagram.com/htmlacademy/" class="social__item insta"></a>
+          </li>
+          <li class="social__item twit">
+            <a href="https://twitter.com/htmlacademy_ru" class="social__item twit"></a>
+          </li>
         </ul>
-      </nav>
+      </section>
 
-      <div class="social">
-        <a href="https://www.facebook.com/htmlacademy" class="social__item fb">Доставка</a>
-        <a href="https://www.instagram.com/htmlacademy/" class="social__item insta">Гарантия</a>
-        <a href="https://twitter.com/htmlacademy_ru" class="social__item twit">Контакты</a>
-      </div>
-
-      <nav class="footer-nav">
-        <ul class="footer-nav__item">
-          <li class="footer-nav__item"><a href="">Войти</a></li>
-          <li class="footer-nav__item"><a href="">Сравнить</a></li>
-          <li class="footer-nav__item"><a href="">Корзина</a></li>
-        </ul>
-      </nav>
+      <ul class="footer-nav__item">
+        <li class="footer-nav__item"><a href="">Войти</a></li>
+        <li class="footer-nav__item"><a href="">Сравнить</a></li>
+        <li class="footer-nav__item"><a href="">Корзина</a></li>
+      </ul>
 
       <div class="tel">
-        <a href="tel:+749549595955">+7 (495) 495-95-95</a>
+        <a href="tel:+749549595955" aria-label="+7 (495) 495-95-95">+7 (495) 495-95-95</a>
       </div>
 
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__academy" aria-label="сайт html академии"></a>
     </footer>
+
+    <section class="pop-up contact-us">
+      <form action="#" method="post">
+        <button class="btn-close" type="button">x</button>
+        <input type="text" placeholder="Ваше имя">
+        <input type="email" placeholder="Ваш e-mail">
+        <p><textarea placeholder="В свободной форме"></textarea></p>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
