@@ -7,10 +7,11 @@
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="img/svg/black_logo.svg" width="163" height="35" alt="логотип магазина Девайс" aria-label="дейвайс">
+        <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="логотип магазина Девайс" aria-label="дейвайс">
       </a>
 
       <form action="#" method="POST">
+        <img src="img/svg-device/search.svg" width="16" height="16" alt="search-icon">
         <input type="search" placeholder="Поиск по сайту">
       </form>
 
@@ -18,16 +19,16 @@
         <h2 class="visually-hidden">Юзер-навигация</h2>
         <ul class="user-nav__list">
           <li class="user-nav__item">
-            <a href="">Валентин Петухов</a>
+            <a href=""><img src="img/svg-device/user.svg" width="13" height="14" alt="user-icon">Валентин Петухов</a>
           </li>
           <li class="user-nav__item">
             <a href="">Выйти</a>
           </li>
           <li class="user-nav__item">
-            <a href="">Сравнить</a>
+            <a href=""><img src="img/svg-device/compare.svg" width="14" height="14" alt="compare-icon">Сравнить</a>
           </li>
           <li class="user-nav__item">
-            <a href="">Корзина</a>
+            <a href=""><img src="img/svg-device/cart.svg" width="10" height="10" alt="cart-icon">Корзина</a>
           </li>
         </ul>
       </section>
@@ -80,12 +81,31 @@
       </div>
 
       <section class="sort">
-        <h2 class="sort__title visually-hidden">Сортировка товаров</h2>
+        <h2 class="sort__title">Сортировка:</h2>
+        <ul class="sort__list">
+          <li class="sort__by">
+            <a href="" class="sort__link sort__link-active">По цене</a>
+          </li>
+          <li class="sort__by">
+            <a href="" class="sort__link">По типу</a>
+          </li>
+          <li class="sort__by">
+            <a href="" class="sort__link">По популярности</a>
+          </li>
+        </ul>
 
+        <ul class="sort__arrows">
+          <li class="sort__by">
+            <a href="" class="sort__link"><img src="img/svg-device/icon-up-dir.svg"></a>
+          </li>
+          <li class="sort__by">
+            <a href="" class="sort__link sort__link-active"><img src="img/svg-device/icon-down-dir.svg"></a>
+          </li>
+        </ul>
       </section>
 
       <section class="filter">
-        <h2 class="filter__title visually-hidden">Фильтр товаров</h2>
+        <h2 class="filter__title">Фильтр</h2>
         <form class="filter__form" action="https://echo.htmlacademy.ru/" method="GET" id="form-filter">
           <fieldset class="filter__price">
             <legend>Стоимость</legend>
@@ -221,10 +241,10 @@
       </section>
 
       <ul class="footer-nav__item">
-        <li class="footer-nav__item"><a href="">Валентин Петухов</a></li>
+        <li class="footer-nav__item"><a href=""><img src="img/svg-device/user.svg" width="13" height="14" alt="user-icon"> Валентин Петухов</a></li>
         <li class="footer-nav__item"><a href="">Выйти</a></li>
-        <li class="footer-nav__item"><a href="">Сравнить</a></li>
-        <li class="footer-nav__item"><a href="">Корзина</a></li>
+        <li class="footer-nav__item"><a href=""><img src="img/svg-device/compare.svg" width="14 " height="14" alt="compare-icon">Сравнить</a></li>
+        <li class="footer-nav__item"><a href=""><img src="img/svg-device/cart.svg" width="10" height="10" alt="cart-icon">Корзина</a></li>
       </ul>
 
       <div class="tel">
