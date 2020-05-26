@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="https://via.placeholder.com/150x100" width="150px" height="100" alt="логотип магазина Девайс" aria-label="дейвайс">
+        <img src="img/svg/black_logo.svg" width="163" height="35" alt="логотип магазина Девайс" aria-label="дейвайс">
       </a>
 
       <form action="#" method="POST">
@@ -15,12 +15,13 @@
       </form>
 
       <section class="user-nav">
+        <h2 class="visually-hidden">Юзер-навигация</h2>
         <ul class="user-nav__list">
           <li class="user-nav__item">
-            <a href="">Поиск по сайту</a>
+            <a href="">Валентин Петухов</a>
           </li>
           <li class="user-nav__item">
-            <a href="">Войти</a>
+            <a href="">Выйти</a>
           </li>
           <li class="user-nav__item">
             <a href="">Сравнить</a>
@@ -88,7 +89,9 @@
         <form class="filter__form" action="https://echo.htmlacademy.ru/" method="GET" id="form-filter">
           <fieldset class="filter__price">
             <legend>Стоимость</legend>
-            <div id="slider-range"></div>
+            <div id="slider-range">
+              <input type="range" multiple value="0,10000"/>
+            </div>
           </fieldset>
 
           <fieldset class="filter__color">
@@ -116,59 +119,55 @@
         <h2 class="catalog-items__title visually-hidden">Список моноподов для селфи</h2>
         <ul class="catalog-items__wrap item">
           <li class="item">
-            <div class="item-overlay">
-              <button class="btn item__cart-btn">В корзину</button>
-              <button class="item__compare-btn">Добавить к сравнению</button>
-            </div>
             <div class="item__info">
-              <img src="https://via.placeholder.com/150x100" width="150px" height="100" alt="Любительская селфи-палка" aria-label="Любительская селфи-палка">
-              <a href="" class="item__title">
-                <p>Любительская селфи-палка</p>
-              </a>
-              <p class="item__price">500 руб.</p>
+              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"
+                aria-label="Любительская селфи-палка">
             </div>
+            <a href="" class="item__title">
+              <h3>Любительская селфи-палка</h3>
+            </a>
+            <p class="item__price">500 руб.</p>
+            <button class="btn item__cart-btn">В корзину</button>
+            <button class="item__compare-btn">Добавить к сравнению</button>
           </li>
 
           <li class="item">
-            <div class="item-overlay">
-              <button class="btn item__cart-btn">В корзину</button>
-              <button class="item__compare-btn">Добавить к сравнению</button>
-            </div>
             <div class="item__info">
-              <img src="https://via.placeholder.com/150x100" width="150px" height="100" alt="Профессиональная селфи-палка" aria-label="Профессиональная селфи-палка">
-              <a href="" class="item__title">
-                <p>Профессиональная селфи-палка</p>
-              </a>
-              <p class="item__price">1 500 руб.</p>
+              <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"
+                aria-label="Профессиональная селфи-палка">
             </div>
+            <a href="" class="item__title">
+              <h3>Профессиональная селфи-палка</h3>
+            </a>
+            <p class="item__price">1 500 руб.</p>
+            <button class="btn item__cart-btn">В корзину</button>
+            <button class="item__compare-btn">Добавить к сравнению</button>
           </li>
 
           <li class="item">
-            <div class="item-overlay">
-              <button class="btn item__cart-btn">В корзину</button>
-              <button class="item__compare-btn">Добавить к сравнению</button>
-            </div>
             <div class="item__info">
-              <img src="https://via.placeholder.com/150x100" width="150px" height="100" alt="Непотопляемая селфи-палка" aria-label="Непотопляемая селфи-палка">
-              <a href="" class="item__title">
-                <p>Непотопляемая селфи-палка</p>
-              </a>
-              <p class="item__price">2 500 руб.</p>
+              <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"
+                aria-label="Непотопляемая селфи-палка">
             </div>
+            <a href="" class="item__title">
+              <h3>Непотопляемая селфи-палка</h3>
+            </a>
+            <p class="item__price">2 500 руб.</p>
+            <button class="btn item__cart-btn">В корзину</button>
+            <button class="item__compare-btn">Добавить к сравнению</button>
           </li>
 
           <li class="item item-new">
-            <div class="item-overlay">
-              <button class="btn item__cart-btn">В корзину</button>
-              <button class="item__compare-btn">Добавить к сравнению</button>
-            </div>
             <div class="item__info">
-              <img src="https://via.placeholder.com/150x100" width="150px" height="100" alt="Селфи-палка «Следуй за мной»" aria-label="Селфи-палка «Следуй за мной»">
-              <a href="" class="item__title">
-                <p>Селфи-палка «Следуй за мной»</p>
-              </a>
-              <p class="item__price">4 900 руб.</p>
+              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"
+                aria-label="Селфи-палка «Следуй за мной»">
             </div>
+            <a href="" class="item__title">
+              <h3>Селфи-палка «Следуй за мной»</h3>
+            </a>
+            <p class="item__price">4 900 руб.</p>
+            <button class="btn item__cart-btn">В корзину</button>
+            <button class="item__compare-btn">Добавить к сравнению</button>
           </li>
         </ul>
 
@@ -194,10 +193,11 @@
     </main>
 
     <footer class="page-footer">
-
-      <a href="index.html" class="page-footer__logo" aria-label="дейвайс"></a>
+      <a href="index.html" class="page-footer__logo" aria-label="дейвайс">
+        <img src="img/svg/yellow_logo.svg" width="163" height="35" alt="логотип магазина Девайс" aria-label="девайс">
+      </a>
       <span class="page-footer__address">г. Москва, ул. Строителей, 15</span>
-      <div class="page-footer__yellowblock"></div>
+      <div class="decor-rectangle__yellow"></div>
 
       <ul class="footer-menu__list">
         <li class="footer-menu__item"><a href="">Доставка</a></li>
@@ -209,19 +209,20 @@
         <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__list">
           <li class="social__item fb">
-            <a href="https://www.facebook.com/htmlacademy" class="social__item fb"></a>
+            <a href="https://www.facebook.com/htmlacademy" class="social__item fb"><img src="img/svg/fb.svg" width="32" height="32" alt="facebook" aria-label="Мы в фейсбуке"></a>
           </li>
           <li class="social__item insta">
-            <a href="https://www.instagram.com/htmlacademy/" class="social__item insta"></a>
+            <a href="https://www.instagram.com/htmlacademy/" class="social__item insta"><img src="img/svg/insta.svg" width="32" height="32" alt="instagram" aria-label="Мы в инстаграме"></a>
           </li>
           <li class="social__item twit">
-            <a href="https://twitter.com/htmlacademy_ru" class="social__item twit"></a>
+            <a href="https://twitter.com/htmlacademy_ru" class="social__item twit"><img src="img/svg/tw.svg" width="32" height="32" alt="twitter" aria-label="Мы в твиттере"></a>
           </li>
         </ul>
       </section>
 
       <ul class="footer-nav__item">
-        <li class="footer-nav__item"><a href="">Войти</a></li>
+        <li class="footer-nav__item"><a href="">Валентин Петухов</a></li>
+        <li class="footer-nav__item"><a href="">Выйти</a></li>
         <li class="footer-nav__item"><a href="">Сравнить</a></li>
         <li class="footer-nav__item"><a href="">Корзина</a></li>
       </ul>
@@ -230,7 +231,7 @@
         <a href="tel:+749549595955" aria-label="+7 (495) 495-95-95">+7 (495) 495-95-95</a>
       </div>
 
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__academy" aria-label="сайт html академии"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__academy" aria-label="сайт html академии"><img src="img/svg/Vector-9.svg" width="27" height="34" alt="academy-logo"></a>
     </footer>
   </body>
 </html>
