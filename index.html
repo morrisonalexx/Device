@@ -3,69 +3,83 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" name="top">
-        <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="" aria-label="Device main-page">
-      </a>
+    <header class="header">
+      <nav class="header-navigation">
+        <div class="header-navigation__wrapper">
+          <a class="header-navigation__logo" name="top">
+            <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="" aria-label="Device main-page">
+          </a>
 
-      <form action="https://echo.htmlacademy.ru/courses" method="POST">
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
-        <input type="search" id="search" placeholder="Поиск по сайту" alt="search-field">
-      </form>
+          <div class="search">
+            <a class="header-search" href="search.html">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+            <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="POST">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input class="search-icon" type="text" id="search" placeholder="Поиск по сайту" alt="search-field">
+            </form>
+            <button class="search-btn" type="submit" value="Поиск" aria-label="Поиск по сайту">Найти</button>
+          </div>
 
-      <section class="user-nav">
-        <h2 class="visually-hidden">Юзер-навигация</h2>
-        <ul class="user-nav__list">
-          <li class="user-nav__item">
-            <a href=""><img src="img/svg-device/user.svg" width="14" height="14" alt="user">Войти</a>
-          </li>
-          <li class="user-nav__item">
-            <a href=""><img src="img/svg-device/compare.svg" width="14" height="14" alt="compare">Сравнить</a>
-          </li>
-          <li class="user-nav__item">
-            <a href=""><img src="img/svg-device/cart.svg" width="14" height="14" alt="cart">Корзина</a>
-          </li>
-        </ul>
-      </section>
-
-      <nav class="header-menu">
-        <ul class="header-menu__list" aria-label="main-menu">
-          <li class="header-menu__item">
-            <a href="catalog.html">Каталог товаров</a>
-            <ul class="header-menu__sub submenu">
-              <li class="submenu_item">
-                <a href="">Виртуальная реальность</a>
+          <div class="user-navigation">
+            <span class="visually-hidden">Юзер-навигация</span>
+            <ul class="user-navigation__list">
+              <li class="user-navigation__item">
+                <a href=""><img src="img/svg-device/user.svg" width="14" height="14" alt="user">Войти</a>
               </li>
-              <li class="submenu_item">
-                <a href="">Моноподы для селфи</a>
+              <li class="user-navigation__item">
+                <a href=""><img src="img/svg-device/compare.svg" width="14" height="14" alt="compare">Сравнить</a>
               </li>
-              <li class="submenu_item">
-                <a href="">Экшн-камеры</a>
-              </li>
-              <li class="submenu_item">
-                <a href="">Фитнес-браслеты</a>
-              </li>
-              <li class="submenu_item">
-                <a href="">Умные часы</a>
-              </li>
-              <li class="submenu_item">
-                <a href="">Квадрокоптеры</a>
+              <li class="user-navigation__item">
+                <a href=""><img src="img/svg-device/cart.svg" width="14" height="14" alt="cart">Корзина</a>
               </li>
             </ul>
-          </li>
-          <li class="header-menu__item">
-            <a href="">Доставка</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="">Гарантия</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="">Контакты</a>
-          </li>
-        </ul>
-        <div class="decor-rectangle__white"></div>
+          </div>
+
+          <div class="main-menu">
+            <span class="visually-hidden">Меню</span>
+            <ul class="main-menu__list" aria-label="main-menu">
+              <li class="main-menu__item">
+                <a href="catalog.html">Каталог товаров</a>
+                <ul class="main-menu__sub submenu">
+                  <li class="submenu__item">
+                    <a href="">Виртуальная реальность</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="">Моноподы для селфи</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="">Экшн-камеры</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="">Фитнес-браслеты</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="">Умные часы</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item">
+                <a href="">Доставка</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="">Гарантия</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="decor-rectangle__white"></div>
+        </div>
       </nav>
     </header>
 
@@ -253,14 +267,14 @@
             Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
             компаниями:
           </p>
-          <ul class="devivery" aria-label="delivery options">
-            <li class="devivery_comp">
+          <ul class="delivery" aria-label="delivery options">
+            <li class="delivery__company">
               <a href="">Деловые линии</a>
             </li>
-            <li class="devivery_comp">
+            <li class="delivery__company">
               <a href="">Автотрейдинг</a>
             </li>
-            <li class="devivery_comp">
+            <li class="delivery__company">
               <a href="">ЖелДорЭкспедиция</a>
             </li>
           </ul>
@@ -290,80 +304,97 @@
     </main>
 
     <footer class="page-footer">
-      <a href="#top" class="page-footer__logo" aria-label="Device">
-        <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="device">
-      </a>
-      <address class="page-footer__address">г. Москва, ул. Строителей, 15</address>
-      <div class="decor-rectangle__yellow"></div>
+      <nav class="page-footer__nav">
+        <div class="page-footer__wrapper">
+          <a href="#top" class="page-footer__logo" aria-label="Device">
+            <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="device">
+          </a>
+          <address class="page-footer__address">г. Москва, ул. Строителей, 15</address>
+          <div class="decor-rectangle__yellow"></div>
 
-      <ul class="footer-menu__list">
-        <li class="footer-menu__item">
-          <a href="">Доставка</a>
-        </li>
-        <li class="footer-menu__item">
-          <a href="">Гарантия</a>
-        </li>
-        <li class="footer-menu__item">
-          <a href="">Контакты</a>
-        </li>
-      </ul>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="">Доставка</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="">Гарантия</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="">Контакты</a>
+            </li>
+          </ul>
 
-      <section class="social">
-        <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social__list">
-          <li class="social__item fb">
-            <a href="https://www.facebook.com/htmlacademy" class="social__item fb"><img src="img/svg-device/fb.svg" width="32" height="32" alt="facebook" aria-label="Мы в фейсбуке"></a>
-          </li>
-          <li class="social__item insta">
-            <a href="https://www.instagram.com/htmlacademy/" class="social__item insta"><img src="img/svg-device/instagram.svg" width="32" height="32" alt="instagram" aria-label="Мы в инстаграме"></a>
-          </li>
-          <li class="social__item twit">
-            <a href="https://twitter.com/htmlacademy_ru" class="social__item twit"><img src="img/svg-device/twitter.svg" width="32" height="32" alt="twitter" aria-label="Мы в твиттере"></a>
-          </li>
-        </ul>
-      </section>
+          <section class="social">
+            <h2 class="social__title visually-hidden">Мы в социальных сетях</h2>
+            <ul class="social__list">
+              <li class="social__item fb">
+                <a href="https://www.facebook.com/htmlacademy" class="social__item fb"><img src="img/svg-device/fb.svg"
+                    width="32" height="32" alt="facebook" aria-label="Мы в фейсбуке"></a>
+              </li>
+              <li class="social__item insta">
+                <a href="https://www.instagram.com/htmlacademy/" class="social__item insta"><img
+                    src="img/svg-device/instagram.svg" width="32" height="32" alt="instagram"
+                    aria-label="Мы в инстаграме"></a>
+              </li>
+              <li class="social__item twit">
+                <a href="https://twitter.com/htmlacademy_ru" class="social__item twit"><img src="img/svg-device/twitter.svg"
+                    width="32" height="32" alt="twitter" aria-label="Мы в твиттере"></a>
+              </li>
+            </ul>
+          </section>
 
-      <ul class="footer-nav__item">
-        <li class="footer-nav__item">
-          <a href=""><img src="img/svg-device/user.svg" alt="cart">Войти</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href=""><img src="img/svg-device/compare.svg" alt="cart">Сравнить</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href=""><img src="img/svg-device/cart.svg" alt="cart">Корзина</a>
-        </li>
-      </ul>
+          <ul class="footer-nav__item">
+            <li class="footer-nav__item">
+              <a href=""><img src="img/svg-device/user.svg" alt="cart">Войти</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href=""><img src="img/svg-device/compare.svg" alt="cart">Сравнить</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href=""><img src="img/svg-device/cart.svg" alt="cart">Корзина</a>
+            </li>
+          </ul>
 
-      <div class="tel">
-        <a href="tel:+749549595955" aria-label="+7 (495) 495-95-95">+7 (495) 495-95-95</a>
-      </div>
+          <div class="tel">
+            <a href="tel:+749549595955" aria-label="+7 (495) 495-95-95">+7 (495) 495-95-95</a>
+          </div>
 
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__academy" aria-label="сайт html академии">
-        <img src="img/svg-device/logo-html.svg" width="27" height="34" alt="academy-logo">
-      </a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__academy" aria-label="сайт html академии">
+            <img src="img/svg-device/logo-html.svg" width="27" height="34" alt="academy-logo">
+          </a>
+        </div>
+      </nav>
     </footer>
 
-    <section class="pop-up contact-us">
+    <section class="modal contact-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <button class="btn-close" type="button">
         <img src="img/svg-device/modal-close.svg" width="55" height="55" alt="закрыть форму обратной связи">
       </button>
 
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <form class="contact-us__form" action="https://echo.htmlacademy.ru/courses" method="post">
         <p class="contact-us__username">
           <label for="your-name">Ваше имя:</label>
           <input type="text" id="your-name" name="name" placeholder="Имя Фамилия">
         </p>
-        <p class="contact-us__email"></p>
-          <label for="your-name">Ваш e-mail:</label>
+
+        <p class="contact-us__email">
+          <label for="your-email">Ваш e-mail:</label>
           <input type="email" id="your-email" name="email" placeholder="email@example.com">
         </p>
+
         <p class="contact-us__text-field">
-          <textarea name="text">В свободной форме</textarea>
+          <label for="text-field">Текст письма:</label>
+          <textarea type="text" id="text-field" name="text">В свободной форме</textarea>
         </p>
         <button class="btn" type="submit">Отправить</button>
       </form>
+    </section>
+
+    <section class="modal map-modal">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <!-- Здесь будет карта -->
+      <button type="button">Закрыть</button>
     </section>
   </body>
 </html>
