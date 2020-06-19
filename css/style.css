@@ -31,7 +31,9 @@
   src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"), url("../fonts/web/gilroyextrabold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 /* Variables */
 
@@ -64,6 +66,10 @@
 
 
 
+
+
+
+
 /* Global */
 
 body {
@@ -88,9 +94,33 @@ img {
   height: auto;
 }
 
+
+/* Grid */
+
+.page-height {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: flex-start;
+}
+
+
 /* Header */
 
+.header {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+
 .header-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
@@ -101,7 +131,7 @@ img {
 }
 
 .header-navigation__wrapper {
-  width: 1160px;
+  width: 100%;
   height: 186px;
   left: 0px;
   top: 20px;
@@ -112,35 +142,37 @@ img {
   position: absolute;
   width: 163px;
   height: 35px;
-  left: 200px;
-  top: 20px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
-.header-navigation__logo:hover {
-  opacity: 0.6;
+
+/* Container */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
-.header-navigation__logo:active {
-  opacity: 0.3;
+.header-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
 }
+
 
 
 /* Search-form */
-
+.search {
+  order: 2;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
 .search-form input[type="text"] {
   font: inherit;
   color: var(--transparent-black-strong);
   background-color: transparent;
   border: none;
-}
-
-.search-form input:hover {
-  color: var(--transparent-black-light);
-  border-bottom: 2px solid var(--basic-black);
-}
-
-.search-form input:focus {
-  color: var(--basic-black);
 }
 
 .search-icon {
@@ -150,13 +182,16 @@ img {
 }
 
 /* User-navigation */
-
-.user-navigation__list li {
-  display: inline-block;
-}
-
-.user-navigation__list {
+.user-navigation {
+  width: 1040;
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(66, 113, 151, 0.3);
+  outline-offset: -5px;
   list-style: none;
+}
+.user-navigation li {
+  display: inline-block;
 }
 
 .user-navigation__item a {
@@ -178,7 +213,10 @@ img {
 
 
 /* Main-menu */
-
+.main-menu {
+  outline: 5px solid rgba(197, 28, 132, 0.3);
+  outline-offset: -5px;
+}
 .main-menu__list,
 .submenu {
   list-style: none;
