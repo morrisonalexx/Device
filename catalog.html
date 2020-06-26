@@ -10,80 +10,79 @@
 
   <body class="page-body">
     <header class="header">
-      <nav class="header-navigation">
-        <a class="header-navigation__logo" href="index.html">
-          <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="" aria-label="Device main-page">
-        </a>
+      <div class="container">
+        <nav class="header-navigation">
+          <div class="header-navigation__wrapper catalog-nav__wrapper">
+            <a class="header-navigation__logo">
+              <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="Девайс" aria-label="Device main-page">
+            </a>
 
-        <div class="header-navigation__wrapper">
-          <div class="container">
-            <div class="search">
-              <a class="header-search" href="search.html">
+            <div class="container">
+              <div class="search-container">
+                <img class="search-icon" src="img/svg-device/search.svg" width="16" height="16"></img>
+                <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
                 <span class="visually-hidden">Поиск</span>
-              </a>
-              <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="POST">
-                <label class="visually-hidden" for="search">Поиск по сайту</label>
-                <input class="search-icon" type="text" id="search" placeholder="Поиск по сайту" alt="search-field">
-              </form>
-              <button class="search-btn" type="submit" value="Поиск" aria-label="Поиск по сайту">Найти</button>
-            </div>
-
-
-            <ul class="user-navigation">
-              <li class="user-navigation__item">
-                <a href=""><img src="img/svg-device/user.svg" width="14" height="14" alt="user">Валентин Петухов</a>
-              </li>
-              <li class="user-navigation__item">
-                <a class="logout" href="">Выйти</a>
-              </li>
-              <li class="user-navigation__item">
-                <a href=""><img src="img/svg-device/compare.svg" width="14" height="14" alt="compare">Сравнить</a>
-              </li>
-              <li class="user-navigation__item">
-                <a href=""><img src="img/svg-device/cart.svg" width="14" height="14" alt="cart">Корзина</a>
-              </li>
-            </ul>
-
-            <div class="main-menu">
-              <ul class="main-menu__list" aria-label="main-menu">
-                <li class="main-menu__item open">
-                  <a href="catalog.html">Каталог товаров</a>
-                  <ul class="main-menu__sub submenu">
-                    <li class="submenu__item">
-                      <a href="">Виртуальная реальность</a>
-                    </li>
-                    <li class="submenu__item">
-                      <a href="">Моноподы для селфи</a>
-                    </li>
-                    <li class="submenu__item">
-                      <a href="">Экшн-камеры</a>
-                    </li>
-                    <li class="submenu__item">
-                      <a href="">Фитнес-браслеты</a>
-                    </li>
-                    <li class="submenu__item">
-                      <a href="">Умные часы</a>
-                    </li>
-                    <li class="submenu__item">
-                      <a href="">Квадрокоптеры</a>
-                    </li>
-                  </ul>
+                <button class="search-btn" type="submit">Поиск</button>
+              </div>
+            
+            
+              <ul class="user-navigation">
+                <li class="user-navigation__item">
+                  <a class="login-link" href=""><img src="img/svg-device/user.svg" width="14" height="14" alt="user">Войти</a>
                 </li>
-                <li class="main-menu__item">
-                  <a href="">Доставка</a>
+                <li class="user-navigation__item">
+                  <a class="compare-link" href=""><img src="img/svg-device/compare.svg" width="14" height="14"
+                      alt="compare">Сравнить</a>
                 </li>
-                <li class="main-menu__item">
-                  <a href="">Гарантия</a>
-                </li>
-                <li class="main-menu__item">
-                  <a href="">Контакты</a>
+                <li class="user-navigation__item">
+                  <a class="cart-link" href=""><img src="img/svg-device/cart.svg" width="14" height="14" alt="cart">Корзина</a>
                 </li>
               </ul>
             </div>
+
+            
+              <div class="container">
+                <ul class="main-menu">
+                  <li class="main-menu__item">
+                    <a href="catalog.html">Каталог товаров</a>
+                    <div class="submenu-container">
+                      <ul class="main-menu__sub submenu">
+                        <li class="submenu__item">
+                          <a href="">Виртуальная реальность</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="">Моноподы для селфи</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="">Экшн-камеры</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="">Фитнес-браслеты</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="">Умные часы</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="">Квадрокоптеры</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-menu__item">
+                    <a href="">Доставка</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a href="">Гарантия</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a href="">Контакты</a>
+                  </li>
+                </ul>
+              </div>
             <div class="decor-rectangle__white"></div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
@@ -110,9 +109,7 @@
             <li class="sort__by">
               <a href="" class="sort__link">По популярности</a>
             </li>
-          </ul>
-
-          <ul class="sort__arrows">
+          
             <li class="sort__by">
               <a href="" class="sort__link sort__link-disabled"><img src="img/svg-device/icon-down-dir.svg"
                   alt="по возрастанию"></a>
@@ -137,19 +134,19 @@
           <fieldset class="filter__color">
             <legend><span>Цвет</span></legend>
             <label class="filter__color-checkbox">
-              <input type="checkbox" name="black" checked>Чёрный
+              <input type="checkbox" name="color" value="black" checked>Чёрный
             </label>
             <label class="filter__color-checkbox">
-              <input type="checkbox" name="white">Белый
+              <input type="checkbox" name="color" value="white">Белый
             </label>
             <label class="filter__color-checkbox">
-              <input type="checkbox" name="blue" checked>Синий
+              <input type="checkbox" name="color" value="blue" checked>Синий
             </label>
             <label class="filter__color-checkbox">
-              <input type="checkbox" name="red" checked>Красный
+              <input type="checkbox" name="color" value="red" checked>Красный
             </label>
             <label class="filter__color-checkbox">
-              <input type="checkbox" name="pink">Розовый
+              <input type="checkbox" name="color" value="pink">Розовый
             </label>
           </fieldset>
 
