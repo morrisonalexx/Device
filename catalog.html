@@ -10,109 +10,108 @@
 
   <body class="page-body">
     <header class="catalog-header">
-      <div class="catalog-header__container">
-        <div class="catalog-header__wrapper">
-          <div class="container">
+      <div class="container">
+        <nav class="catalog-header header-navigation ">
+          <div class="decor-rectangle__white"></div>
+          <a href="index.html" class="header-navigation__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
+              <path
+                d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z" />
+            </svg>
+          </a>
 
-            <nav class="header-navigation">
-              <a href="index.html" class="header-navigation__logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
-                  <path
-                    d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z" />
-                </svg>
-              </a>
+          <div class="catalog-header__wrapper">
+            <div class="user-nav__wrapper">
+              <form class="search-form" action="https://echo.htmlacademy.ru/courses">
+                <label for="search"></label>
 
-              <div class="user-nav__wrapper">
-                <form class="search-form" action="https://echo.htmlacademy.ru/courses">
-                  <label for="search"></label>
+                <input type="text" name="search" id="search" placeholder="Поиск по сайту">
 
-                  <input type="text" name="search" id="search" placeholder="Поиск по сайту">
+                <button type="submit">Найти</button>
+              </form>
 
-                  <button type="submit">Найти</button>
-                </form>
-
-                <ul class="user-navigation">
-                  <li class="user-navigation__item user-link">
-                    <img src="img/svg-device/icon_user.svg" width="9" height="10" alt="Пользователь">
-                    <a href="">Валентин Петухов</a>
-                  </li>
-
-                  <li class="user-navigation__item login-link">
-                    <a href="">Выйти</a>
-                  </li>
-
-                  <li class="user-navigation__item compare-link">
-                    <img src="img/svg-device/icon_chart.svg" width="8.17" height="8.17" alt="Сравнить">
-                    <a href="">Сравнить</a>
-                  </li>
-
-                  <li class="user-navigation__item cart-link">
-                    <img src="img/svg-device/icon-cart.svg" width="10" height="10" alt="Корзина">
-                    <a href="">Корзина</a>
-                  </li>
-                </ul>
-              </div>
-
-              <ul class="main-menu">
-                <li class="main-menu__item main-catalog">
-                  <a href="catalog.html">Каталог товаров</a>
-                  <img src="img/svg-device/icon_plus.svg" width="15" height="15" alt="Открыть каталог">
-                  <div class="submenu-container">
-                    <ul class="main-menu__sub submenu">
-                      <li class="submenu__item">
-                        <a href="">Виртуальная реальность</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="">Моноподы для селфи</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="">Экшн-камеры</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="">Фитнес-браслеты</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="">Умные часы</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="">Квадрокоптеры</a>
-                      </li>
-                    </ul>
-                  </div>
+              <ul class="user-navigation">
+                <li class="user-navigation__item user-link">
+                  <img src="img/svg-device/icon_user.svg" width="9" height="10" alt="Личный кабинет">
+                  <a href="">Валентин Петухов</a>
+                </li>
+                <li class="user-navigation__item login-link">
+                  <a href="">Выйти</a>
                 </li>
 
-                <li class="main-menu__item main-delivery">
-                  <a href="">Доставка</a>
+                <li class="user-navigation__item compare-link">
+                  <img src="img/svg-device/icon_chart.svg" width="8.17" height="8.17" alt="Сравнить">
+                  <a href="">Сравнить</a>
                 </li>
-                <li class="main-menu__item main-warranty">
-                  <a href="">Гарантия</a>
-                </li>
-                <li class="main-menu__item main-contacts">
-                  <a href="">Контакты</a>
+
+                <li class="user-navigation__item cart-link">
+                  <img src="img/svg-device/icon-cart.svg" width="10" height="10" alt="Корзина">
+                  <a href="">Корзина</a>
                 </li>
               </ul>
-            </nav>
+            </div>
+
+            <ul class="main-menu">
+              <li class="main-menu__item main-catalog">
+                <a href="catalog.html">Каталог товаров</a>
+                <img src="img/svg-device/icon_plus.svg" width="15" height="15" alt="Открыть каталог">
+                <div class="submenu-container">
+                  <ul class="main-menu__sub submenu">
+                    <li class="submenu__item">
+                      <a href="">Виртуальная реальность</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="">Моноподы для селфи</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="">Экшн-камеры</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="">Фитнес-браслеты</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="">Умные часы</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="main-menu__item main-delivery">
+                <a href="">Доставка</a>
+              </li>
+              <li class="main-menu__item main-warranty">
+                <a href="">Гарантия</a>
+              </li>
+              <li class="main-menu__item main-contacts">
+                <a href="">Контакты</a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
+        </nav>
     </header>
 
-    <main class="catalog-page container">
-      <h1 class="page-catalog__title">Моноподы для селфи</h1>
+    <main class="catalog-page">
+      <div class="container">
+        <h1 class="page-catalog__title">Моноподы для селфи</h1>
 
-      <ul class="breadcrumbs">
-        <li>
-          <a href="">Главная</a>
-          <img class="breadcrumbs-arrow" src="img/svg-device/nav-arrow.svg">
-        </li>
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <img class="breadcrumbs-arrow" src="img/svg-device/nav-arrow.svg">
-        </li>
-        <li>
-          <a class="active">Моноподы для селфи</a>
-        </li>
-      </ul>
+        <ul class="breadcrumbs">
+          <li>
+            <a href="">Главная</a>
+            <img class="breadcrumbs-arrow" src="img/svg-device/nav-arrow.svg">
+          </li>
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <img class="breadcrumbs-arrow" src="img/svg-device/nav-arrow.svg">
+          </li>
+          <li>
+            <a class="active">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
+
 
       <div class="catalog-body">
         <section class="sort">
@@ -261,20 +260,23 @@
       </div>
     </main>
 
-    <footer class="page-footer main-footer">
-
-      <div class="main-footer__container">
-        <a class="footer__logo" aria-label="Device">
-          <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="device">
-        </a>
-        <div class="decor-rectangle__yellow"></div>
-
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
         <div class="container">
-          <div class="main-footer__nav">
+          <nav class="main-footer-navigation">
+
+            <a class="footer__logo" aria-label="Device">
+              <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="device">
+            </a>
+
+            <div class="decor-rectangle__yellow"></div>
             <ul class="footer-user-nav">
               <li class="footer-user-nav__item">
-                <img src="img/svg-device/icon_user_yellow.svg" width="9" height="10" alt="Войти">
-                <a href="">Войти</a>
+                <img src="img/svg-device/icon_user_yellow.svg" width="9" height="10" alt="Личный кабинет">
+                <a href="">Валентин Петухов</a>
+              </li>
+              <li class="footer-user-nav__item">
+                <a href="">Выйти</a>
               </li>
               <li class="footer-user-nav__item">
                 <img src="img/svg-device/icon_chart_yellow.svg" width="8.17" height="8.17" alt="Сравнить">
@@ -287,7 +289,6 @@
             </ul>
 
             <div class="footer-main-nav">
-
               <address class="footer-address">
                 г.&nbsp;Москва,&nbsp;ул.&nbsp;Строителей,&nbsp;15
               </address>
@@ -347,16 +348,16 @@
                 </li>
               </ul>
             </section>
-          </div>
-        </div>
 
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright" aria-label="сайт html академии">
-          <span class="screenreader">Наш Твиттер</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
-            <path fill="#FFC600"
-              d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
-            </svg>
-        </a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright" aria-label="сайт html академии">
+              <span class="screenreader">Наш Твиттер</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+                <path fill="#FFC600"
+                  d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+              </svg>
+            </a>
+          </nav>
+        </div>
       </div>
     </footer>
   </body>

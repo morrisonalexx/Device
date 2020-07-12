@@ -119,37 +119,53 @@ body {
 /* Header */
 
 .main-header {
-  min-height: 700px;
-  margin: 0 auto;
   margin-bottom: 76px;
 }
 
-.catalog-header {
-  min-height: 206px;
+.container {
+  width: 1160px;
   margin: 0 auto;
 }
-
-.main-header__container {
-  margin-top: 20px;
+.header-navigation {
   position: relative;
-  height: 700px;
-  width: 1160px;
+  width: 100%;
+  height: 334px;
+  margin-top: 20px;
 }
 
-.catalog-header__container {
-  margin-top: 20px;
-  position: relative;
-  height: 206px;
-  width: 1160px;
+.decor-rectangle__white {
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  left: 600px;
+  top: 225px;
+  background-color: var(--basic-white);
+  z-index: 1;
 }
 
-.main-header__wrapper {
+.header-navigation__logo {
+  position: absolute;
+  width: 163px;
+  height: 35px;
+  top: 0;
+  left: 60px;
+
+  background-image: url("/img/svg-device/logo-device.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.header-navigation__wrapper {
   position: absolute;
   width: 100%;
   height: 300px;
-  margin-top: 20px;
+  top: 20px;
   background-color: var(--special-yellow);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.catalog-header {
+  height: 226px;
 }
 
 .catalog-header__wrapper {
@@ -160,28 +176,6 @@ body {
   background-color: var(--special-yellow);
 }
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 60px;
-}
-
-.header-navigation {
-  padding: 0;
-  min-width: 1040px;
-}
-
-.header-navigation__logo {
-  position: absolute;
-  width: 163px;
-  height: 35px;
-  top: -20px;
-  left: 60px;
-
-  background-image: url("/img/svg-device/logo-device.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 /* Header container */
 
@@ -189,6 +183,9 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  margin-top: 44px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .main-header__wrapper .container {
@@ -334,6 +331,8 @@ form.search-form::after {
 .main-menu {
   display: flex;
   justify-content: flex-start;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .main-menu__item {
@@ -373,7 +372,7 @@ form.search-form::after {
 
 .submenu-container {
   position: absolute;
-  display: ;
+  display: none;
   width: 1160px;
   height: 146px;
   left: 0;
@@ -428,17 +427,6 @@ form.search-form::after {
   display: block;
 }
 
-.decor-rectangle__white {
-  position: absolute;
-  width: 100px;
-  height: 7px;
-  left: 600px;
-  top: 225px;
-  background-color: var(--basic-white);
-  z-index: 1;
-}
-
-
 
 /* Promo-Slide*/
 
@@ -446,7 +434,6 @@ form.search-form::after {
   display: none;
   position: absolute;
   width: 1024px;
-  height: 506px;
   top: 194px;
   z-index: 1;
   margin-left: 88px;
@@ -573,7 +560,7 @@ form.search-form::after {
 
 .popular {
   position: relative;
-  flex-basis: 1160px;
+  width: 1160px;
   margin: 0 auto;
   margin-bottom: 49px;
 }
@@ -665,7 +652,6 @@ form.search-form::after {
 .services {
   position: relative;
   width: 1440px;
-  height: 403px;
   margin-bottom: 90px;
 }
 
@@ -700,8 +686,6 @@ form.search-form::after {
 
 .logotypes {
   margin-bottom: 90px;
-  width: 1160px;
-
 }
 
 .logotypes__list {
@@ -876,6 +860,7 @@ form.search-form::after {
 .page-catalog__title {
   margin-top: 44px;
   margin-bottom: 30px;
+  margin-left: 60px;
   font-family: "Gilroy";
   font-weight: 800;
   font-size: 47px;
@@ -1166,33 +1151,31 @@ fieldset > label {
 /*   Footer   */
 
 .main-footer {
-  width: 1440px;
+  min-width: 1440px;
+  height: 324px;
+}
+.main-footer__wrapper {
+  width: 100%;
   height: 324px;
   background-color: var(--basic-dark);
 }
 
-.main-footer__container {
+.main-footer-navigation {
   margin: 0 auto;
   position: relative;
   width: 100%;
   height: 324px;
   padding-top: 46px;
   padding-bottom: 65px;
-}
 
-.main-footer .container {
-  padding: 0;
-}
-
-.main-footer__nav {
 }
 
 .footer__logo {
   position: absolute;
   width: 163px;
   height: 35px;
-  left: 140px;
   top: 64px;
+  z-index: 1;
 }
 
 .footer-nav__list,
@@ -1228,13 +1211,18 @@ fieldset > label {
 .footer-user-nav__item:last-child a {
   padding-left: 9px;
 }
-
+.footer-user-nav__item:nth-child(2) a{
+  padding: 0;
+}
 .footer-user-nav__item:first-child {
-  margin-right: 43px;
+  margin-right: 24px;
 }
 
 .footer-user-nav__item:last-child {
   margin-right: 0;
+}
+.footer-user-nav__item:first-child a{
+  padding-left: 13px;
 }
 
 .footer-main-nav__wrapper {
@@ -1327,17 +1315,17 @@ fieldset > label {
   position: absolute;
   width: 80px;
   height: 7px;
-  left: 140px;
   top: 239px;
   background-color: var(--special-yellow-dark);
+  z-index: 1;
 }
 
 .copyright {
   position: absolute;
   width: 27px;
   height: 34px;
-  left: 1273px;
   top: 226px;
+  right: 0;
 
 
   background-image: url("/img/svg-device/logo-html.svg");
