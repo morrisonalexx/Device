@@ -1062,10 +1062,15 @@ body {
 .info {
   display: flex;
   flex-direction: column;
+  padding-top: 57px;
+  position: relative;
 }
 
 .info-title {
   position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
   line-height: 58px;
   font-family: "Gilroy";
   font-size: 47px;
@@ -1077,7 +1082,7 @@ body {
 .contacts-title::before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -57px;
   left: 0;
   width: 80px;
   height: 7px;
@@ -1093,7 +1098,7 @@ body {
   margin-bottom: 40px;
 }
 
-.info p:last-of-type {
+.about p:last-of-type {
   margin-bottom: 60px;
 }
 
@@ -1101,31 +1106,59 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.delivery li:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.partner {
+  display: inline-block;
   font-family: "Gilroy";
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
 }
+.delivery li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 15px
+}
 
-.partner::before {
+.delivery li::before {
   content: '';
-  display: inline-block;
-  border: 2px solid var(--basic-grey-light);
-  border-radius: 100%;
+  position: absolute;
   width: 8px;
   height: 8px;
-  margin-right: 24px;
+  top: 10px;
+  left: 0;
+  border: 2px solid var(--basic-grey-light);
+  border-radius: 100%;
+}
+
+.contacts-map-wrap {
+  position: relative;
+}
+
+.contacts-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 560px;
+  height: 222px;
+  z-index: 2;
+}
+
+.contacts-map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 560px;
+  height: 222px;
+  z-index: 2;
 }
 
 
+
 /* Buttons*/
+
+
 .btn {
   font-family: "Gilroy";
   position: relative;
