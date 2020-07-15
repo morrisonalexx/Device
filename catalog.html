@@ -31,26 +31,23 @@
 
             <div class="user-nav-panel">
               <ul class="login">
-                <li class="user">
-                  <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <li class="user"><svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.49996 0.333328C5.69704 0.333328 6.66663 1.3775 6.66663 2.66666C6.66663 3.95583 5.69704 5 4.49996 5C3.30288 5 2.33329 3.95583 2.33329 2.66666C2.33329 1.3775 3.30288 0.333328 4.49996 0.333328ZM4.49996 9.66666C4.49996 9.66666 8.83329 9.66666 8.83329 8.5C8.83329 7.1 6.72079 5.58333 4.49996 5.58333C2.27913 5.58333 0.166626 7.1 0.166626 8.5C0.166626 9.66666 4.49996 9.66666 4.49996 9.66666Z"
                       fill="black" />
                   </svg>
                   <a href="">Валентин Петухов</a>
-                </li>
-                <li class="user">
                   <a class="logout-link" href="">Выйти</a>
                 </li>
               </ul>
+
               <ul class="user-navigation">
                 <li class="user-navigation-item compare-link">
                   <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M0.916748 3.36667H2.66675V9.08334H0.916748V3.36667ZM4.18342 0.916672H5.81675V9.08334H4.18342V0.916672ZM7.45008 5.58334H9.08342V9.08334H7.45008V5.58334Z"
-                      fill="black" />
-                  </svg>
-
+                      <path
+                        d="M0.916748 3.36667H2.66675V9.08334H0.916748V3.36667ZM4.18342 0.916672H5.81675V9.08334H4.18342V0.916672ZM7.45008 5.58334H9.08342V9.08334H7.45008V5.58334Z"
+                        fill="black" />
+                    </svg>
                   <a href="">Сравнить</a>
                 </li>
 
@@ -115,12 +112,10 @@
 
       <ul class="breadcrumbs">
         <li>
-          <a href="">Главная</a>
-          <img class="breadcrumbs-arrow" src="img/svg-device/nav-arrow.svg">
+          <a href="index.html">Главная</a>
         </li>
         <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <img class="breadcrumbs-arrow" src="img/svg-device/nav-arrow.svg">
+          <a href="">Каталог товаров</a>
         </li>
         <li>
           <a class="active">Моноподы для селфи</a>
@@ -132,7 +127,7 @@
 
       <section class="form-container">
         <h2 class="filter-title">Фильтр:</h2>
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter-form form" action="https://echo.htmlacademy.ru" method="post">
           <div class="filter-form-field">
             <fieldset>
               <legend>Стоимость</legend>
@@ -307,21 +302,24 @@
             </li>
           </ul>
 
-          <div class="pagination">
+          <div class="pagination page-container">
             <a class="pagination-button" href="">Назад</a>
             <a class="pagination-button pagination-button-forward" href="">Вперед</a>
-            <ul class="pagination-list">
-              <li>
-                <a class="pagination-page pagination-page-active" href="">1</a>
-              </li>
-              <li>
-                <a class="pagination-page" href="">2</a>
-              </li>
-              <li>
-                <a class="pagination-page" href="">3</a>
-              </li>
-            </ul>
+
+              <ul class="pagination-list">
+                <li>
+                  <a class="pagination-page pagination-page-active" href="">1</a>
+                </li>
+                <li>
+                  <a class="pagination-page" href="">2</a>
+                </li>
+                <li>
+                  <a class="pagination-page" href="">3</a>
+                </li>
+              </ul>
+            </div>
           </div>
+
         </section>
       </div>
     </div>
@@ -346,8 +344,8 @@
                     d="M4.49996 0.333252C5.69704 0.333252 6.66663 1.37742 6.66663 2.66659C6.66663 3.95575 5.69704 4.99992 4.49996 4.99992C3.30288 4.99992 2.33329 3.95575 2.33329 2.66659C2.33329 1.37742 3.30288 0.333252 4.49996 0.333252ZM4.49996 9.66659C4.49996 9.66659 8.83329 9.66659 8.83329 8.49992C8.83329 7.09992 6.72079 5.58325 4.49996 5.58325C2.27913 5.58325 0.166626 7.09992 0.166626 8.49992C0.166626 9.66659 4.49996 9.66659 4.49996 9.66659Z"
                     fill="#FFC600" />
                 </svg>
-
-                <a href="">Войти</a>
+                <a href="">Валентин Петухов</a>
+                <a class="logout-link" href="">Выйти</a>
               </li>
             </ul>
 
@@ -444,7 +442,6 @@
       </div>
     </div>
   </footer>
-  <script src="/js/script.js"></script>
 </body>
 
 </html>
