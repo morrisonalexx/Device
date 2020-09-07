@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page-height" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -84,81 +84,83 @@
           </ul>
         </div>
       </nav>
-    </div>
-  </header>
 
-  <main class="main-page">
-    <h1 class="visually-hidden">Магазин DEVICE</h1>
-    <div class="container">
       <section class="slider">
+        <h2 class="visually-hidden">Промо-слайдер</h2>
+        <input class="slider-1 visually-hidden" type="radio" name="slider-item" id="slider-01" checked="">
+        <input class="slider-2 visually-hidden" type="radio" name="slider-item" id="slider-02">
+        <input class="slider-3 visually-hidden" type="radio" name="slider-item" id="slider-03">
 
-        <h2 class="visually-hidden">Популярные товары</h2>
         <div class="slider-controls">
-          <button class="slider-control slider-control-active" type="button">Слайд №1</button>
-          <button class="slider-control" type="button">Слайд №2</button>
-          <button class="slider-control" type="button">Слайд №3</button>
+          <label class="slider-control slider-control-1" for="slider-01">Первый слайд</label>
+          <label class="slider-control slider-control-2" for="slider-02">Второй слайд</label>
+          <label class="slider-control slider-control-3" for="slider-03">Третий слайд</label>
         </div>
 
-        <ul class="slider-slides">
-          <li class="slide slide-active">
-            <img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
-            <div class="slide-content">
-              <b class="rectangle">Делай селфи,
+        <ul class="slider-list">
+          <li class="slide slide-1 slide-active">
+            <div class="slide-image slide-image-1"></div>
+            <div class="slide-description">
+              <b class="line">Делай селфи,
                 <br>как Бен Стиллер!</b>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
+              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
+                всего
                 5 килограмм.</p>
               <a class="btn btn-details" href="catalog.html">Подробнее</a>
 
-              <table class="properties">
-                <tr>
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
-                </tr>
-                <tr>
-                  <th>Длина палки</th>
-                  <th>Вес палки</th>
-                  <th>Материал</th>
-                </tr>
+              <table>
+                <tbody>
+                  <tr class="properties">
+                    <th>Длина палки</th>
+                    <th>Вес палки</th>
+                    <th>Материал</th>
+                  </tr>
+                  <tr class="properties">
+                    <td>8,5 м</td>
+                    <td>5 кг</td>
+                    <td>Карбон</td>
+                  </tr>
+                </tbody>
+
               </table>
             </div>
           </li>
-          <li class="slide">
-            <img src="img/slider-2.png" alt="Мотивирующий фитнес-браслет" width="345" height="485">
-            <div class="slide-content">
+          <li class="slide slide-2">
+            <div class="slide-image slide-image-2"></div>
+            <div class="slide-description">
               <b class="line">Худеем
                 <br>правильно!</b>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="btn btn-details" href="catalog.html">Подробнее</a>
-              <table class="properties">
+              <table>
                 <tbody>
-                  <tr>
-                    <td>48 часов</td>
-                  </tr>
-                  <tr>
+                  <tr class="properties">
                     <th>Без подзарядки</th>
+                  </tr>
+                  <tr class="properties">
+                    <td>48 часов</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </li>
-          <li class="slide">
-            <img src="img/slider-3.png" alt="Жалящий квадрокоптер" width="526" height="334">
-            <div class="slide-content">
+          <li class="slide slide-3">
+            <div class="slide-image slide-image-3"></div>
+            <div class="slide-description">
               <b class="line">Порхает как бабочка,
                 <br>жалит как пчела!</b>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
                 камеру.</p>
               <a class="btn btn-details" href="catalog.html">Подробнее</a>
-              <table class="properties">
+              <table>
                 <tbody>
-                  <tr>
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                  <tr>
+                  <tr class="properties">
                     <th>Дальность полета</th>
                     <th>Радиус поражения</th>
+                  </tr>
+                  <tr class="properties">
+                    <td>800 м</td>
+                    <td>50 м</td>
                   </tr>
                 </tbody>
               </table>
@@ -167,12 +169,13 @@
         </ul>
       </section>
     </div>
+  </header>
 
+  <main class="main-page">
+    <h1 class="visually-hidden">Магазин DEVICE</h1>
     <section class="popular">
+      <h2 class="visually-hidden">Популярное</h2>
       <div class="container">
-
-        <h2 class="visually-hidden">Популярное</h2>
-
         <ul class="popular-list">
           <li class="popular-item popular-vr">
             <a href="">Виртуальная реальность</a>
@@ -198,42 +201,45 @@
     </section>
 
     <section class="services">
+      <h2 class="visually-hidden">Услуги</h2>
       <div class="container">
 
-        <h2 class="visually-hidden">Услуги</h2>
+        <div class="services-wrapper">
+          <input class="service-1 visually-hidden" type="radio" name="service-item" id="service-item-1" checked>
+          <input class="service-2 visually-hidden" type="radio" name="service-item" id="service-item-2">
+          <input class="service-3 visually-hidden" type="radio" name="service-item" id="service-item-3">
 
-        <div class="services-slider">
-          <ul class="services-slider-controls">
-            <li class="services-control">
-              <a class="btn services-btn services-btn-active" href="#delivery">
-                <span>Доставкa</span>
-              </a>
-            </li>
-            <li class="services-control ">
-              <a class="btn services-btn" href="#warranty">
-                <span>Гарантия</span>
-              </a>
-            </li>
-            <li class="services-control ">
-              <a class="btn services-btn" href="#credit">
-                <span>Кредит</span>
-              </a>
-            </li>
-          </ul>
+          <div class="service-controls">
+            <label class="service-control" for="service-item-1">
+              <span class="btn services-btn service-control-1">Доставка</span>
+            </label>
+
+            <label class="service-control" for="service-item-2">
+              <span class="btn services-btn service-control-2">Гарантия</span>
+            </label>
+
+            <label class="service-control" for="service-item-3">
+              <span class="btn services-btn service-control-3">Кредит</span>
+            </label>
+          </div>
+
           <ul class="services-list">
-            <li class="services-item service-delivery services-item-active">
-              <h3 id="delivery">Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+            <li class="services-item service-delivery">
+              <h3 class="services-title">Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем,
                 поднимая его на ваш этаж.</p>
             </li>
             <li class="services-item service-warranty">
-              <h3 id="warranty">Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,
+              <h3 class="services-title">Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар,
                 не дом, конечно же.</p>
             </li>
             <li class="services-item service-credit">
-              <h3 id="credit">Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+              <h3 class="services-title">Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+                кредита.
                 Выгодные для нашего банка, разумеется.</p>
             </li>
           </ul>
@@ -299,7 +305,10 @@
           Всякое бывает.
         </p>
         <div class="contacts-map-wrap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473923!2d37.52742931641868!3d55.687034004529366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1594818357617!5m2!1sen!2sru" width="560" height="222" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473923!2d37.52742931641868!3d55.687034004529366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1594818357617!5m2!1sen!2sru"
+            width="560" height="222" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
           <a class="contacts-map" href="">
             <span class="visually-hidden">Как к нам проехать</span>
           </a>
@@ -316,7 +325,8 @@
 
           <a class="footer-logo" aria-label="Device">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
-              <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
+              <path
+                d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z" />
             </svg>
           </a>
 
@@ -415,40 +425,40 @@
 
   <section class="modal modal-write">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <button class="close-button">
-      <span class="visually-hidden">Закрыть</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
-        <path fill="#F0C52E"
-          d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z" />
-        </svg>
-    </button>
+    <button class="close-button" type="button" aria-label="Закрыть"></button>
+
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="feedback-item">
-        <label for="name">Ваше имя:</label>
-        <input id="name" class="user-name" name="name" type="text" placeholder="Имя Фамилия">
+      <div class="modal-container">
+
+        <div class="feedback-item">
+          <label for="name">Ваше имя:</label>
+          <input id="name" class="user-name" name="name" type="text" placeholder="Имя Фамилия">
+        </div>
+
+        <div class="feedback-item">
+          <label for="mail">Ваш e-mail:</label>
+          <input id="mail" class="user-email" name="mail" type="email" placeholder="email@example.com">
+        </div>
       </div>
-      <div class="feedback-item">
-        <label for="mail">Ваш e-mail:</label>
-        <input id="mail" class="user-email" name="mail" type="email" placeholder="email@example.com">
-      </div>
+
       <div class="feedback-item">
         <label for="text">Текст письма:</label>
-        <textarea id="text" class="feedback-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea id="text" class="feedback-text" name="text" cols="30" rows="10"
+          placeholder="В свободной форме"></textarea>
       </div>
-      <button class="btn button-write" type="submit">Отправить</button>
+      <button class="btn send-feedback" type="submit">Отправить</button>
     </form>
   </section>
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Карта проезда</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.0603700422676!2d37.5309912898239!3d55.68793816770462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1530553378121" width="960" height="560" style="border: none" allowfullscreen=""></iframe>
-    <img src="img/map-big.jpg" alt="Карта проезда" width="960" height="559">
-    <button class="close-button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.0603700422676!2d37.5309912898239!3d55.68793816770462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1530553378121"
+      width="960" height="560" style="border: none" allowfullscreen=""></iframe>
+    <button class="close-button" type="button" aria-label="Закрыть"></button>
   </section>
 
-<script src="/js/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
