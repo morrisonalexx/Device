@@ -35,6 +35,18 @@
 
 /* Animation */
 
+@keyframes bounce {
+  0% {transform: translateY(-2000px); }
+  70% {transform: translateY(30px); }
+  90% {transform: translateY(-10px); }
+  100% {transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(0);}
+  20%, 40%, 60%, 80% {transform: translateX(0);}
+}
 
 /* Variables */
 :root {
@@ -1709,6 +1721,21 @@ left: 96px;
   margin-bottom: 15px;
 }
 
+.map-link {
+  display: block;
+  width: 560px;
+  height: 222px;
+}
+
+.map-link img:focus,
+.map-link img:active {
+  border: 1px solid var(--special-yellow-dark);
+}
+
+#map {
+  width: 560px;
+  height: 222px;
+}
 /* Footer */
 
 .footer-wrapper {
@@ -2031,6 +2058,7 @@ left: 96px;
   padding: 92px 100px 69px 100px;
 }
 
+.close-map,
 .close-button {
   position: absolute;
   width: 55px;
@@ -2044,8 +2072,10 @@ left: 96px;
   opacity: 0.5;
 }
 
+.close-map::before,
+.close-map::after,
 .close-button::before,
-.close-button::after {
+.close-button::after  {
   content: "";
   position: absolute;
   width: 25px;
@@ -2056,18 +2086,23 @@ left: 96px;
   opacity: 0.7;
 }
 
+.close-map::before,
 .close-button::before {
   transform: rotate(45deg);
 }
 
+.close-map::after,
 .close-button::after {
   transform: rotate(-45deg);
 }
 
+.close-map:hover,
 .close-button:hover {
   opacity: 1;
 }
 
+.close-map:focus,
+.close-map:active,
 .close-button:focus,
 .close-button:active {
   opacity: 0.3;
@@ -2142,5 +2177,31 @@ left: 96px;
 }
 
 .modal-map iframe {
-  border: none;
+  width: 994px;
+  height: 593px;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
 }

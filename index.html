@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min.style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -304,15 +304,12 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>проверить работоспособность покупки.
           Всякое бывает.
         </p>
-        <div class="contacts-map-wrap">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473923!2d37.52742931641868!3d55.687034004529366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1594818357617!5m2!1sen!2sru"
-            width="560" height="222" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-          <a class="contacts-map" href="">
-            <span class="visually-hidden">Как к нам проехать</span>
-          </a>
-        </div>
+
+        <a class="map-link" id="map" href="#">
+          <img src="img/map_1.png" width="560" height="222" alt="Офис компании по ул. Строителей, 15, г. Москва">
+          <span class="visually-hidden">Как к нам проехать</span>
+        </a>
+
         <a href="" class="write-us-btn btn ">напишите нам</a>
       </section>
     </div>
@@ -432,19 +429,19 @@
 
         <div class="feedback-item">
           <label for="name">Ваше имя:</label>
-          <input id="name" class="user-name" name="name" type="text" placeholder="Имя Фамилия">
+          <input id="name" class="user-name" name="name" type="text" placeholder="Имя Фамилия" required>
         </div>
 
         <div class="feedback-item">
           <label for="mail">Ваш e-mail:</label>
-          <input id="mail" class="user-email" name="mail" type="email" placeholder="email@example.com">
+          <input id="mail" class="user-email" name="mail" type="email" placeholder="email@example.com" required>
         </div>
       </div>
 
       <div class="feedback-item">
         <label for="text">Текст письма:</label>
         <textarea id="text" class="feedback-text" name="text" cols="30" rows="10"
-          placeholder="В свободной форме"></textarea>
+          placeholder="В свободной форме" required></textarea>
       </div>
       <button class="btn send-feedback" type="submit">Отправить</button>
     </form>
@@ -452,13 +449,15 @@
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Карта проезда</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.0603700422676!2d37.5309912898239!3d55.68793816770462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1530553378121"
-      width="960" height="560" style="border: none" allowfullscreen=""></iframe>
-    <button class="close-button" type="button" aria-label="Закрыть"></button>
+    <a class="map-link" id="map" href="#">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2272.611691631842!2d37.52741903180194!3d55.68715683061648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQxJzEzLjciTiAzN8KwMzEnNDYuOCJF!5e0!3m2!1sen!2sru!4v1599659258526!5m2!1sen!2sru" width="994" height="593" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </a>
+    <button class="close-map" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <script src="/js/script.js"></script>
-</body>
+  <script src="js/script.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBPBPusbr_P1uhuo5ofU0_9oNxp077FeE&callback=initMap"></script>
 
+</body>
 </html>
